@@ -3,9 +3,11 @@
     padding: 0;
     margin: 0;
 }
-
+/* added the contents from the P element, as they were redundant*/
 body {
     background-color: #d9dcd6;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 /* changed this element selector to follow the semantic structure in the HTML*/
@@ -16,42 +18,44 @@ header {
     color: #ffffff;
 }
 
-/* changed this from .header class to header element*/
+/* changed this from .header class to header element to follow Semantic Structure*/
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-/* changed this from .header class to header element*/
-header h1 .seo {
+/* changed this from .header class to .seo class, with span element to clean up h1 element, applied seo class to the header*/
+.seo span {
     color: #d9dcd6;
 }
-/* changed this from .header class to header element*/
-header div {
+/* changed this from .header class to nav element to follow Semantic Structure*/
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-/* changed this from .header class to header element*/
-header div ul {
+/* changed this from .header class to nav element*/
+header nav ul {
     list-style-type: none;
 }
-/* changed this from .header class to header element*/
-header div ul li {
+/* changed this from .header class to nav element*/
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+ 
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
-p {
+/* commented out the below, as the default is 16px */
+/*p {
     font-size: 16px;
-}
+}*/
 
 .hero {
     height: 800px;
@@ -89,55 +93,30 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* optimized the benefits secion by consolidating  the below section into a class called benefits-content */
+
+.benefits-content {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefits-content h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
 
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefits-content img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
 
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
 
-.search-engine-optimization {
+/* created the below class to consolidate the contents within the main section of the site*/
+.seo-content {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -146,58 +125,26 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
 
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
 
-.search-engine-optimization img {
+.seo-content img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
 
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+.seo-content h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+/* changed the below class, to an element to match the semantic structure changes in the HTML file */
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
 }
