@@ -39,15 +39,17 @@ header nav {
 /* changed this from .header class to nav element*/
 header nav ul {
     list-style-type: none;
+    
 }
 /* changed this from .header class to nav element*/
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
+    
 }
 
  
-a {
+ a {
     color: #ffffff;
     text-decoration: none;
 }
