@@ -27,4 +27,4 @@ List of core changes to CSS
 9 - changed the footer class to the footer element to follow semantic structure.
 
 
-end of readmeg
+end of readme
